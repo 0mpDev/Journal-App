@@ -26,7 +26,7 @@ import java.util.List;
          userService.saveEntry(user);
   }
 
-  @PutMapping
+  @PutMapping("/{userName}")
   public ResponseEntity<?> updateUser(@RequestBody User user){
    User userInDb = userService.findByUserName(user.getUserName());
    if(userInDb != null){

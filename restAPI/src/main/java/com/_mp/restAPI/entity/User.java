@@ -27,6 +27,6 @@ public class User {
 
 
     public List<JournalEntry> getJournalEntries() {
-        return null;
+        return journalEntries;
     }
 }
